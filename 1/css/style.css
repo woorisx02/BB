@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+
+* { 
+    
+    margin: 0; padding:0; box-sizing: border-box;
+
+ }
+
+body{ 
+   
+    overflow-x: hidden; overflow-y: auto;
+}
+.head-private{
+    width: 1000px; height: 60px; margin: 0 auto;
+    display: flex;justify-content: space-between;
+    
+}
+
+.bar-privacy{
+    display: flex; justify-content: space-between; align-items: center;
+    width: 200px; padding: 0 10px; 
+}
+.top-item{
+    display: flex; justify-content: center; align-items: center;
+}
+
+.top-item div{
+    margin: 30px 50px; width: 600px; height: 60px; text-align: center;
+}
+
+.top-item h1{
+    width: 200px; margin: 10px; line-height: 70px;
+    border-radius: 50px; font-size: 40px; text-align: center; color: #333;
+}
+.search-box{
+    display: flex; justify-content: center;
+    width:500px; height: 100%; 
+    font-size: 40px;border: 1px solid #333; border-radius: 50px;
+}
+.search-box input, .search-box button{ border: 0; outline:0; height: 100%;}
+.search-box input{width: 80%;font-size: 30px;}
+.search-box input::placeholder { text-align: center; font-size: 30px;}
+.search-box button{width:40px; font-size: 45px; background: none;}
+.search-box button i{color: #333;}
+
+/* ============== 메뉴 ============== */
+nav { 
+    width: 100%;
+    background: #eee; border-top:1px solid #999; border-bottom: 1px solid #999;
+}
+nav ul.main-menu{ 
+    position: relative;
+    width: 1200px; height: 60px; margin: 0 auto; padding: 0 100px;
+    list-style: none; display: flex; justify-content: space-between; align-items: center;
+    font-size: 20px;
+    z-index: 100;
+}
+
+header > nav > ul.main-menu > li{width: 100%; height: 100%; text-align: center; line-height: 60px;}
+header > nav > ul.main-menu li a{display: block; width: 100%; height: 100%;}
+ul.main-menu li a:visited, ul.main-menu li a:link { text-decoration: none; color: #333;}
+ul.main-menu > li > ul.sub {
+    list-style: none; display: none;
+    width: 100%; height:40px;
+    font-size: 16px; line-height:40px;
+   
+}
+.sub li{ background:#eee; border-bottom: 1px dashed #333;transition: all 0.4s ease-in;}
+.main-menu > li:hover  ul.sub{
+    display: block; width: 100%;
+}
+
+.sub > li:hover{
+    background: rgb(201, 241, 121);
+}
+
+/* ============== 슬라이드 ============== */
+main {height: 100%;}
+
+section{ 
+    display: flex; flex-direction: column; justify-content: center; align-items: center; 
+}
+
+/* ============== article ============== */
+article{ 
+    display: flex; justify-content: space-between;
+    width: 1000px; height: 500px;
+}
+
+article p{ 
+    margin-top: 20px;
+    font-size: 20px; word-break: break-all; text-align: justify;
+}
+
+
+article a{
+    display: block;
+    width: 70px; height: 40px; margin-left: auto;
+    background: #ffe08c;line-height: 40px; text-align: center;
+    color:#333;border-radius: 10px; text-transform: uppercase; font-weight: bolder;
+    transition: all 0.4s ease-in;
+}
+article a:hover { background: rgb(201, 241, 121);}
+article .contents { width: 500px; height: 100%; padding: 0 50px;}
+.ac-img {width: 500px; height: 400px; border-radius: 10px;}
+
+.ac-bg-1{ background: url('../imgs/bookillust1.jpg') no-repeat center center; background-size: cover;}
+.ac-bg-2{ background: url('../imgs/bookillust2.jpg') no-repeat center center; background-size: cover;}
+.ac-bg-3{ background: url('../imgs/bookillust3.jpg') no-repeat center center; background-size: cover;}
+
+
+/* ============== footer ============== */
+
+footer{
+    position: relative; bottom: 0px;
+    width: 100%; height: 200px; padding: 0 100px; background: #333; text-align: center;
+    }
+
+footer a{ text-decoration: none; color: #bbb; line-height: 100px;}
+.footer-menu{ 
+    width: 1200px; margin: 0 auto;
+    display: flex;justify-content: space-between; border-bottom: 1px dashed #999;
+}
+.footer-menu select{
+    height: 30px; margin: 20px 0;
+}
+ul.footer-item{ 
+    width: 800px;
+    display: flex; justify-content: space-between;
+} 
+ul.footer-item li{
+   margin: 20px 10px; color: #ddd;
+}
+
+ul.info-item{
+    width: 700px; margin: 20px auto;
+    display: flex; justify-content: space-between; align-items: center;
+    color: #999; text-align: center;
+}
+
+.footer-copy{
+    color: #aaa; 
+}

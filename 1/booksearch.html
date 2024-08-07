@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>통합자료검색</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/booksearch.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="head-private">
+            <div class="top-item">
+                <h1><a href="index.html">BookBug</a></h1>
+            </div>
+       
+            <ul class="bar-privacy">
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+                <li><a href="">언어</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <h2>통합자료검색</h2>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <div class="search-data-menu">
+                <input id="ac-1" type="radio" name="ac">
+                <label for="ac-1">통합자료검색</label>
+                <ul class="ac-list ac-list-1">
+                    <li>간략검색</li>
+                    <li>상세검색</li>
+                </ul>
+
+                <input id="ac-3" type="radio" name="ac">
+                <label for="ac-3">DVD/CD검색</label>
+                <input id="ac-4" type="radio" name="ac">
+                <label for="ac-4">주제별검색</label>
+                <input id="ac-5" type="radio" name="ac">
+                <label for="ac-5">신착자료검색</label>
+                <input id="ac-6" type="radio" name="ac">
+                <label for="ac-6">대출베스트</label>
+                <input id="ac-7" type="radio" name="ac">
+                <label for="ac-2">공공도서관인기도서</label>
+                <input id="ac-8" type="radio" name="ac">
+                <label for="ac-8">스마트도서관</label>
+            </div>
+        </aside>
+        <section>
+            <div class="search-title">
+                <h3>간략검색</h3>
+                <h4>자료검색 &lt; 통합자료검색 &lt; 간략검색</h4>
+            </div>
+
+            <div class="search-box">
+                <input type="search" name="search" class="search-text" autofocus>
+                <button type="submit" class="search-btn"><i class="bi bi-search"></i></button>
+            </div>
+            <div class="search-lib">
+                <div class="search-item-list-1">
+                    <div class="s-item s-lib-1">
+                        <input type="checkbox" name="lib" id="lib-1" checked>
+                        <label for="lib-1">중앙도서관</label>
+                    </div>
+                    <div class="s-item s-lib-2">
+                        <input type="checkbox" name="lib" id="lib-2">
+                        <label for="lib-2">논골도서관</label>
+                    </div>
+                    <div class="s-item s-lib-3">
+                        <input type="checkbox" name="lib" id="lib-3">
+                        <label for="lib-3">분당도서관</label>
+                    </div>
+
+                    <div class="s-item s-lib-4">
+                        <input type="checkbox" name="lib" id="lib-4">
+                        <label for="lib-4">운중도서관</label>
+                    </div>
+
+                    <div class="s-item s-lib-5">
+                        <input type="checkbox" name="lib" id="lib-5">
+                        <label for="lib-5">중원어린이도서관</label>
+                    </div>
+                </div>
+                <div class="search-item-list-2">
+                    <div class="s-item s-lib-6">
+                        <input type="checkbox" name="lib" id="lib-6">
+                        <label for="lib-6">판교어린이도서관</label>
+                    </div>
+                    <div class="s-item s-lib-7">
+                        <input type="checkbox" name="lib" id="lib-7">
+                        <label for="lib-7">고등도서관</label>
+                    </div>
+                    <div class="s-item s-lib-8">
+                        <input type="checkbox" name="lib" id="lib-8">
+                        <label for="lib-8">무지개도서관</label>
+                    </div>
+                    <div class="s-item s-lib-9">
+                        <input type="checkbox" name="lib" id="lib-9">
+                        <label for="lib-9">서현도서관</label>
+                    </div>
+                    <div class="s-item s-lib-10">
+                        <input type="checkbox" name="lib" id="lib-10">
+                        <label for="lib-10">위례도서관</label>
+                    </div>
+                </div>
+                <div class="search-item-list-3">
+                    <div class="s-item s-lib-11">
+                        <input type="checkbox" name="lib" id="lib-11">
+                        <label for="lib-11">판교어린이도서관</label>
+                    </div>
+                    <div class="s-item s-lib-12">
+                        <input type="checkbox" name="lib" id="lib-12">
+                        <label for="lib-12">고등도서관</label>
+                    </div>
+                    <div class="s-item s-lib-13">
+                        <input type="checkbox" name="lib" id="lib-13">
+                        <label for="lib-13">무지개도서관</label>
+                    </div>
+                    <div class="s-item s-lib-14">
+                        <input type="checkbox" name="lib" id="lib-14">
+                        <label for="lib-14">서현도서관</label>
+                    </div>
+                    <div class="s-item s-lib-15">
+                        <input type="checkbox" name="lib" id="lib-15">
+                        <label for="lib-15">위례도서관</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-menu">
+            <ul class="footer-item">
+                <li>개인정보처리방침</li>
+                <li>영상정보처리기기운영,관리방침</li>
+                <li>이용약관</li>
+                <li>이메일무단수집거부</li>
+                <li>찾아오시는길</li>
+            </ul>
+            <select name="site" id="site">
+                <option value="">도서관 바로가기</option>
+                <option value="https://www.snlib.go.kr/bd/index.do">분당도서관</option>
+                <option value="https://www.snlib.go.kr/gm/index.do">구미도서관</option>
+                <option value="https://www.seongnam.go.kr/main.do">성남시청</option>
+            </select>
+        </div>
+        <div class="footer-info">
+            <ul class="info-item">
+                <li>(우)13555 경기도 성남시 분당구 판교로 555(야탑동) </li>
+                <li> Tel. 031-777-7777 </li>
+                <li>Fax. 031-777-7777</li>
+            </ul>
+        </div>
+        <div class="footer-copy">
+            Copyright 2024 All rights Reserved
+        </div>
+    </footer>
+</body>
+
+</html>

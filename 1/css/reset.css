@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* fonts.google.com에서 웹폰트로 사용할 서체의 CDN을 사용한다. */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap'); 
+/* font-family: "", sans-serif; */
+@font-face {
+    font-family: 'YESMyoungjo-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YESMyoungjo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+* { margin: 0; padding:0; box-sizing: border-box; }
+/* 
+box-sizing:border-box속성의 쓸모: 모든 요소를 선택하여 박스 외부 여백과 박스 내부 여백을 0으로 초기화하고 박스의 너비값에 박스의 내부 여백과 테두리 값을 포함시킨다. 100+100+10 = 210px -> 100px(border값이나 여백등이 width값에 포함. 포토샵에서 테두리 안쪽, 중앙, 외부 등으로 구별하듯이)
+*/
+/* font-family: "IBM Plex Sans KR", "Poor Story", sans-serif; */
+/* 태그선택자 */
+body { 
+    font-family: "SUIT-Regular", sans-serif; font-size: 16px; color: #333;
+    background: #f6f6f6; 
+}
+/* 본문(서체, 글자크기, 글자색상 등)에 적용할 스타일시트 작성하고 배경색상 적용한다. */
+
+h1, h2 { font-family: "DungGeunMo", serif; color: #f6f6f6; font-weight: 600; }
+h1 { font-size: 24px; } /* 로고에 적용하는 스타일시트 */
+h2 { text-transform: uppercase;} /* 배너에 사용하는 제목에 적용하는 스타일시트*/
+h3, h4, h5, h6 { font-family: "SUIT-Regular", sans-serif; font-weight: 600; }
+h3 { font-size: 24px; }  /* 본문에서 사용하는 제목에 적용하는 스타일시트 */
+ul, ol { list-style: none;} /* 블릿 또는 순번 제거 */
+a { display: block; color: #333; text-decoration: none;} 
+/* display속성으로 박스의 유형을 블록형 박스로 변경하고 글자색상을 #333으로 적용하고 텍스트언더바(밑줄)를 제거한다. */
+input, textarea, button, label { 
+    display:block; 
+    font-family: "DungGeunMo", sans-serif; font-size: 16px; 
+    outline: 0; background:none; border:0; 
+} 
+footer{font-family: "SUIT-Regular";}
+p{font-family:"YESMyoungjo-Regular";}
+/* 입력폼과 텍스트에리어, 버튼요소의 웹호환성을 위해 테두리와 아웃라인을 0으로 초기화하고 배경색을 제거한다. 박스의 유형을 블록형 박스로 변경한다. */
+input { height:40px; }
+/* solid, dotted, dashed */
+textarea { height: 250px;}
+/* input[type="text"]{ width: 100%;} */
+/* input[type="radio"], input[type="checkbox"] {display: inline-block; } */
+.flex-center{ display: flex; justify-content: center; align-items: center;}
+.flex-between{ display: flex; justify-content: space-between; align-items: center;}
+/* ===========  input, textarea  =========== */
+.inputform { 
+    width: 100%;  padding: 10px; 
+    background: #dbecf8; border: 1px solid #06f; border-radius: 20px; 
+    /*
+    solid실선, dashed점선, dotted점
+    border-radius: 20px; 높이의 절반으로 설정 
+    */
+    transition: all 0.4s ease-in; /* 실무에서도 이런형태로 사용됨 */
+}
+/* 가상 선택자 */
+.inputform:hover{ background: #eee; border: 1px solid #ccc; }
+.inputform:focus{ background: rgb(245, 230, 210); border: 1px solid #fc0; }
+
+/* ===========       button      =========== */
+.btn {
+   margin: 5px; padding: 10px 25px; 
+   color: #f6f6f6; border-radius: 27px; cursor: pointer;
+   transition: all 0.4s ease-in;
+   /* transition 색상등의 전환을 미리 등록해줘야됨 */
+}
+
+.btn-primary { background:#0d6efd; }
+.btn-info { background:#257b9c; }
+.btn-danger { background:#ce3a15; }
+.btn-primary:hover { background:#083989; }
+.btn-info:hover { background:#185267; }
+.btn-danger:hover { background:#9f0206; }
+
+/* ===========       banner      =========== */
+.bn {height:450px;}
+.bn-primary {background:#083989;}
+/* 속성 적는 블록안에 공백을 최소한으로 줄인다. */
+.bn h2 {font-size: 54px; text-align:center; padding-top:250px;}

@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+.flexslider { width:100%;}
+
+.slides li{position: relative;}
+
+.fs-bg{
+    height: 600px;
+}
+.fs-bg-1{
+    background: url('../imgs/1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.fs-bg-2{
+    background: url('../imgs/2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.fs-bg-3{
+    background: url('../imgs/3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.fs-bg-4{
+    background: url('../imgs/4.jpg') no-repeat center center;
+    background-size: cover;
+}
+.fs-bg-5{
+    background: url('../imgs/5.jpg') no-repeat center center;
+    background-size: cover;
+}
+.fs-contents {
+    position: absolute; left: 50%; top: 50%; padding: 20px 0;
+    width: 50%; 
+    color: #fff; text-align: center; text-transform: uppercase; 
+    text-shadow: 1px 1px 1px #000; 
+    transform: translateX(-50%);
+}
+
+.flex-control-nav{
+    bottom: 20px;
+}
+.flex-control-nav li a{width: 20px; height: 20px; background: #ffe08c;transition: all 0.4s ease-in;}
+.flex-control-nav li a.flex-active{width: 50px; background: #ffe08c;}
+.flex-control-nav li a:hover{ background: rgb(201, 241, 121);}
+.bi.bi-chevron-compact-left{
+    font-size: 50px; color: #ffe08c; text-shadow: 1px 1px 1px #333;
+}
+.bi.bi-chevron-compact-right{
+    font-size: 50px;color: #ffe08c;text-shadow: 1px 1px 1px #333;
+}
+

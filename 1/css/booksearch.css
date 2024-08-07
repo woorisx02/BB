@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+
+
+.banner{
+     width: 100%; height: 300px; 
+     background: url('../imgs/booksearch.jpg') no-repeat center center; background-size: cover;
+    }
+.banner h2{
+    font-size: 50px; color: #fff; text-align: center; line-height: 300px; text-shadow: 1px 1px 1px #333;
+}
+
+
+
+main{
+    width: 1000px; margin: 0 auto;
+    display: flex; justify-content: space-between; 
+}
+main aside{ width: 320px; height: 500px;}
+main section{ 
+    width: 800px; height: 400px;  margin-right: auto;
+    padding-top: 30px;
+
+}
+main section .search-title{ width:100%; margin-bottom: 20px;color: #333;padding: 0 20px;}
+main > section  h3{ font-size: 30px; font-weight:400; margin-bottom: 10px;}
+main > section  h4{ font-size: 18px; font-weight: 300;}
+main section .search-box { 
+    display: flex; justify-content: space-between;
+    width:800px; height: 60px;
+    border: 1px solid #999;
+}
+
+main section .search-text{width: 750px; height: 100%; padding-left: 30px;}
+main section .search-box .search-btn{ padding-right: 60px;}
+main section .search-box .search-btn i{color: #999; }
+
+main section .search-lib{
+    display: flex; justify-content: space-between; 
+    background: #ddd; border-top: 1px solid #999;
+    width:800px; height: 200px; margin-top: 20px; padding: 0 50px;
+}
+main section .search-lib label{
+    width: 150px;  margin: 5px;
+}
+main section .search-lib .s-item{
+    display: flex;
+    height: 30px; padding: 0 20px;
+    line-height: 30px;
+}
