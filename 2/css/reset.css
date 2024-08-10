@@ -22,18 +22,18 @@ box-sizing:border-box속성의 쓸모: 모든 요소를 선택하여 박스 외�
 /* font-family: "IBM Plex Sans KR", "Poor Story", sans-serif; */
 /* 태그선택자 */
 body { 
-    font-family: "Playfair Display", sans-serif; font-size: 16px; color: #333;
-    background: #f6f6f6; 
+    font-family: "Playfair Display", sans-serif; font-size: 16px; color: #070323;
+    background: #d9cc8f; 
 }
 /* 본문(서체, 글자크기, 글자색상 등)에 적용할 스타일시트 작성하고 배경색상 적용한다. */
 
-h1, h2 { font-family: "Zoika font", serif; color: #fff; font-weight: 500; }
+h1, h2 { font-family: "Zoika font", serif; color: #d9cc8f; font-weight: 500; }
 h1 { font-size: 24px; } /* 로고에 적용하는 스타일시트 */
 h2 { text-transform: uppercase;} /* 배너에 사용하는 제목에 적용하는 스타일시트*/
 h3, h4, h5, h6 { font-family: "Arvo", sans-serif; font-weight: 600; }
 h3 { font-size: 24px; }  /* 본문에서 사용하는 제목에 적용하는 스타일시트 */
 ul, ol { list-style: none;} /* 블릿 또는 순번 제거 */
-a { display: block; color: #333; text-decoration: none;} 
+a { display: block; color: #070323; text-decoration: none;} 
 /* display속성으로 박스의 유형을 블록형 박스로 변경하고 글자색상을 #333으로 적용하고 텍스트언더바(밑줄)를 제거한다. */
 input, textarea, button, label { 
     display:block; 
@@ -53,7 +53,7 @@ textarea { height: 250px;}
 /* ===========  input, textarea  =========== */
 .inputform { 
     width: 100%;  padding: 10px; 
-    background: #dbecf8; border: 1px solid #06f; border-radius: 20px; 
+    background: #d9cc8f; border: 1px solid #06f; border-radius: 20px; 
     /*
     solid실선, dashed점선, dotted점
     border-radius: 20px; 높이의 절반으로 설정 
@@ -61,13 +61,13 @@ textarea { height: 250px;}
     transition: all 0.4s ease-in; /* 실무에서도 이런형태로 사용됨 */
 }
 /* 가상 선택자 */
-.inputform:hover{ background: #eee; border: 1px solid #ccc; }
+.inputform:hover{ background: #d9cc8f; border: 1px solid #ccc; }
 .inputform:focus{ background: rgb(245, 230, 210); border: 1px solid #fc0; }
 
 /* ===========       button      =========== */
 .btn {
    margin: 5px; padding: 10px 25px; 
-   color: #f6f6f6; border-radius: 27px; cursor: pointer;
+   color: #d9cc8f; border-radius: 27px; cursor: pointer;
    transition: all 0.4s ease-in;
    /* transition 색상등의 전환을 미리 등록해줘야됨 */
 }
