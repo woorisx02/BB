@@ -93,9 +93,9 @@ main article {
 
 main article .box{
     width: 450px; margin: 0 auto; 
-    position: absolute; top: 50%; left: 50%;
-    background: rgba(0, 0, 0, 0.2); border-radius: 15px;
-    transform: translate(-50%,-50%); 
+    position: absolute; top: 50%; left: 50%; width: 25%;
+    background: rgba(255, 255, 255, 0.3); border-radius: 20px;
+    transform: translate(-50%, -50%);
 }
 main article .login-box{
     height: 45%; display: none;
@@ -106,12 +106,13 @@ main article .join-box{
 }
 
 main article h3{
-    font-family: 'SUIT-Regular', serif; font-weight: 100; text-shadow: 1px 1px 1px #d9cc8f; margin-top: 30px;
-    font-size: 30px; text-align: center;
+    margin-top: 30px;
+    font-family: 'SUIT-Regular', serif; font-weight: 100; text-shadow: 1px 1px 1px #fff; 
+    font-size: 30px; text-align: center; background: #d9cc8f;
 }
 input{
     width: 80%; height: 50px; margin: 0 auto; padding:5px 20px;
-    background: rgba(0, 0, 0, 0.3); border-radius: 15px; color: #d9cc8f;
+    background: rgba(255, 255, 255, 0.7); border-radius: 15px; color: #070323;
 }
 label{
     height: 35px; line-height: 45px; padding: 0 50px;
@@ -127,11 +128,6 @@ button:hover{
     background: #070323; color: #d9cc8f;text-shadow: 1px 1px 1px #070323;
 }
 
-main section article .join-box{ 
-    position: absolute; top: 50%; left: 50%; width: 25%;
-    background: rgba(255, 255, 255, 0.5);
-    transform: translate(-50%, -50%);
-}
 
 footer{
     position:absolute; top: 95vh;
