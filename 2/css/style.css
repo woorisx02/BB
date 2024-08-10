@@ -31,11 +31,11 @@ width: 10px;
 
 .bg{width: 100vw; height: 100%;}
 .login-bg{ 
-    background: url('../imgs/3.jpg') no-repeat center center; background-size: cover; 
+    background: url('../imgs/6.jpg') no-repeat center center; background-size: cover; 
 }
 
 .ac-1-bg{
-    background: url('../imgs/4.jpg') no-repeat center center; background-size: cover;
+    background: url('../imgs/7.jpg') no-repeat center center; background-size: cover;
 }
 /* .ac-2-bg{
     background: url('../imgs/ac-2-bg.jpg') no-repeat center center; background-size: cover;
@@ -44,14 +44,14 @@ width: 10px;
     background: url('../imgs/ac-3-bg.jpg') no-repeat center center; background-size: cover;
 } */
 .info-bg {
-    background: url('../imgs/5.jpg') no-repeat center center; background-size: cover;
+    background: url('../imgs/8.jpg') no-repeat center center; background-size: cover;
 }
 
-header {position:absolute;  top:0;width: 100%; height: 60px;  z-index: 2;}
+header {position:absolute;  top:0; left:0; width: 100%; height: 110px;  z-index: 2;}
 
 .head-private{
-    width: 100%; height: 60px; padding: 0 200px;
-    display: flex;justify-content: space-between; align-items: center;
+    width: 100%; height: 60px; padding: 0 200px; 
+    display: flex; justify-content: space-between; align-items: center;
    
 }
 .head-private h1{ 
@@ -64,21 +64,30 @@ header {position:absolute;  top:0;width: 100%; height: 60px;  z-index: 2;}
 
 .head-private a{ color: #d9cc8f;}
 
-.private-menu{ 
-   
-    width: 200px;
+header > .head-private > .private-menu{ 
+    position: absolute; top: 0; right: 200px;
+    width: 17%; height: 100%;
     display: flex; justify-content: space-between;
 }
 .private-menu li{
     width: 100%; height: 100%; text-align: center;
 }
 .private-menu li a{
-    width: 100%; height: 60px; line-height: 60px;
+    width: 100%; height: 100%; line-height: 60px;
     color: #d9cc8f; text-shadow: 1px 1px 1px #070323;
 }
+header > nav{
+    width: 100%; height: 40px; background: #d9cc8f; 
+}
 
+header > nav > .main-menu {
+    display: flex; justify-content: space-between; align-items: center;
+    width: 40%; height: 100%; margin: 0 auto;
+   
+}
+header > nav > .main-menu li{
 
-
+}
 main{
    height: 87vh;
 }
@@ -134,7 +143,7 @@ footer{
     width: 100%; height: 50px; padding: 0 100px; line-height: 50px;  
     background: rgba(0, 0, 0, 0.2);
 }
-footer .info{ 
+footer .footer-info{ 
     width: 1200px; height: 100%;
     text-align: left; font-size: 20px; color: #d9cc8f; text-shadow: 1px 1px 1px #070323;
 }
@@ -149,8 +158,6 @@ button.top-btn{
 
 .sticky {
     width: 100%;
-    background: #070323;
-    opacity: 0.7;
     position: fixed;
     top: 0;
     left: 0;
