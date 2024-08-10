@@ -1,6 +1,7 @@
 
 let pageCount = 0;
-let scrollPosition = 0;
+let scrollPosition= 0;
+
 const bodyObj = document.querySelector(".container");
 let topBtn = document.querySelector('.top-btn');
 const loginBtn = document.querySelector('.login-btn');
@@ -10,12 +11,22 @@ const loginBox = document.querySelector('.login-box');
 const joinBox = document.querySelector('.join-box');
 const boxLoginBtn = document.querySelector('button.box-btn-login');
 const boxJoinBtn = document.querySelector('button.box-btn-join');
-const header = document.querySelector('.container > header');
-const section = document.querySelectorAll('main > section');
+// const header = document.querySelector('.container > header');
+const headPrivate =document.querySelector('.head-private');
+const nav = document.querySelector('nav');
+const section = document.querySelectorAll('section');
+const article = document.querySelectorAll('article')
+const menuIntro = document.querySelector('#joinus');
+const menuInfo = document.querySelector('#info');
+
+
+
+
 
 
 bodyObj.addEventListener("mousewheel", function (e) {
   e.preventDefault();
+ 
   if (e.deltaY < 0) {
     //위로
     if (pageCount <= 0) return; // return 나가버림-_-;; break; 멈춤하고 다시 돌아감
@@ -23,9 +34,10 @@ bodyObj.addEventListener("mousewheel", function (e) {
   }
   if (e.deltaY > 0) {
     //아래로
-    if (pageCount >= 3) return;
+    if (pageCount >= section.length) return;
     pageCount++;
   }
+
   scrollPosition = pageCount * window.innerHeight;
   window.scrollTo({ left: 0, top: scrollPosition, behavior: "smooth" });
 },
@@ -44,6 +56,16 @@ const buttonEvent = () =>{
     scrollEvent();
     joinBox.style.display="block";
   });
+  menuIntro.addEventListener("click", function(e){
+    e.preventDefault();
+    location.href="#joinus";
+    scrollEvent();
+  });
+  menuInfo.addEventListener("click", function(e){
+    e.preventDefault();
+    location.href="#info";
+    scrollEvent();
+  });
 }
 
 
@@ -52,21 +74,22 @@ const boxDisplayNone = () =>{
       loginBox.style.display='none';
   });
   boxJoinBtn.addEventListener("click", function(){
-    joinBox.style.display='none';
+      joinBox.style.display='none';
   });
 }
 
 
  const scrollEvent = () => {
   window.addEventListener("scroll", () => {
-    // console.log("scrollTop:"+document.scrollingElement.scrollTop);
         if (document.scrollingElement.scrollTop > 100) {
           topBtn.style.display="block";
-          header.classList.add("sticky");
+          headPrivate.style.display="none";
+          nav.classList.add("sticky");
 
         } else {
           topBtn.style.display="none";
-          header.classList.remove("sticky");
+          nav.classList.remove("sticky");
+          headPrivate.style.display="block";
         }
 
     });
@@ -79,11 +102,13 @@ const boxDisplayNone = () =>{
   
   
 const init = () => {
+    window.addEventListener("scroll", scrollEvent);
+    scrollEvent();
     buttonEvent();
     window.addEventListener("beforeunload", scrollPageEvent);
     scrollPageEvent();
     boxDisplayNone();
-    window.addEventListener("scroll", scrollEvent);
+   
   };
 const scrollPageEvent = () => {
  
