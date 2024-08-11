@@ -23,26 +23,63 @@
             
         </div>
         <nav>
+            
             <ul class="main-menu">
-                <li><a href="#joinus" class="joinus">Introduce</a></li>
-                <li><a href="#info" class="info">Information</a></li>
-                <li><a href="">Communication</a></li>
-                <li><a href="">Culture</a></li>
+                <div class="menu-bg">
+                    <div class="bg-color"></div>
+                </div>
+                <li><a href=""><i class="bi bi-list"></i>
+                    <i class="bi bi-x-lg"></i></a></li>
+                <li>
+                    <a href="#joinus" class="joinus">Introduce</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Library</a></li>
+                        <li><a href="">Convenience</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="#info" class="info">Information</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Recommended Book</a></li>
+                        <li><a href="">Preference Book</a></li>
+                        <li><a href="">New Book</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Communication</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Notice</a></li>
+                        <li><a href="">Inquiry</a></li>
+                        <li><a href="">Book Request</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Culture</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Healing</a></li>
+                        <li><a href="">Reading Meeting</a></li>
+                        
+                    </ul>
+                </li>
+                
             </ul>
+            
         </nav>
+       
     </header>
     <main>
         <section id="main">
             <article>
                 <div class="bg login-bg"></div>
-                <div class="box login-box">
+                <form class="box login-box">
                     <h3>WELCOME TO BB!</h3>
                     <label for="logId">Id</label>
-                    <input type="text" name="logId" id="logId" autocomplete="off">
+                    <input type="text" name="logId" id="logId" autofocus autocomplete="off">
                     <label for="logPwd">Pwd</label>
                     <input type="password" name="logPwd" id="logPwd">
                     <button type="submit" class="btn box-btn-login">로그인</button>
-                </div>
+                </form>
             </article>
            
         </section>
@@ -51,10 +88,10 @@
             <article id="ac-1-box">
                 
                     <div class="bg ac-1-bg"></div>
-                    <div class="box join-box">
+                    <form class="box join-box">
                         <h3>JOIN BB!</h3>
                         <label for="joinId">아이디</label>
-                        <input type="text" name="joinId" id="joinId">
+                        <input type="text" name="joinId" id="joinId" autofocus autocomplete="off">
                         <label for="joinPwd">비밀번호</label>
                         <input type="password" name="joinPwd" id="joinPwd">
                         <label for="joinPwd2">비밀번호확인</label>
@@ -62,7 +99,7 @@
                         <label for="email">이메일주소</label>
                         <input type="email" name="email" id="email">
                         <button type="submit" class="btn box-btn-join">회원가입</button>
-                    </div>
+                    </form>
                 
             </article>
             <!-- <article id="ac-2-box">
