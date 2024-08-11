@@ -32,11 +32,11 @@ body{
 
 .bg{width: 100vw; height: 100%;}
 
-.login-bg{ 
+.main-bg{ 
     background: url('../imgs/11.jpg') no-repeat center center; background-size: cover; 
 }
 
-.ac-1-bg{
+.intro-bg{
     background: url('../imgs/10.jpg') no-repeat center center; background-size: cover;
 }
 /* .ac-2-bg{
@@ -55,6 +55,12 @@ body{
 .cul-bg{
     background: url('../imgs/6.jpg') no-repeat center center; background-size: cover;
 }
+
+
+
+
+
+
 header {position:absolute;  top:0; left:0; width: 100%; height: 110px;  z-index: 2;}
 
 .head-private{
@@ -70,6 +76,10 @@ header {position:absolute;  top:0; left:0; width: 100%; height: 110px;  z-index:
 .dot{color: #d9cc8f;}
 
 .head-private a{ color: #d9cc8f;}
+
+
+
+
 
 header > .head-private > .private-menu{ 
     position: absolute; top: 0; right: 200px;
@@ -104,7 +114,7 @@ header > nav > .main-menu > li > a{
     color: #070323; text-shadow: 1px 1px 1px #d9cc8f;
 }
 
-header > nav > .main-menu > li:nth-child(1) > a > i{
+header > nav > .main-menu .home i{
 font-size: 22px; font-weight: bold;
 }
 header > nav > .main-menu .itag i:nth-child(1){
@@ -142,14 +152,10 @@ header > nav > .main-menu li:hover .sub-menu{
 main{
    height: 87vh;
 }
-main section { width: 100vw; height: 100vh;}
+main section { position: relative; width: 100vw; height: 100vh;}
 main article { 
-   position: relative;
-   width: 100%; height: 100%;
+  
 }
-
-
-
 
 main article form{
     width: 450px; margin: 0 auto; 
@@ -178,6 +184,7 @@ label{
     height: 35px; line-height: 45px; padding: 0 50px;
     font-size: 15px; text-shadow: 1px 1px 1px #d9cc8f;
 }
+
 button.btn{
     width: 80%; height: 50px; margin:30px auto;
     background: #d9cc8f; border-radius: 15px; 
@@ -213,7 +220,9 @@ button.top-btn{
     top: 0;
     left: 0;
   }
-
+.block{
+    display: block;
+}
 .background{
     background: rgb(217, 204, 143); 
 }
