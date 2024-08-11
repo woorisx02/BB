@@ -20,8 +20,9 @@ const menuIntro = document.querySelector('#joinus');
 const menuInfo = document.querySelector('#info');
 const subMenu = document.querySelectorAll('.sub-menu');
 const mainMenu = document.querySelectorAll('.main-menu ');
-const subItem_1 = document.querySelector('.main-menu > li > a > i:nth-of-type(1)');
-const subItem_2 = document.querySelector('.main-menu > li > a > i:nth-of-type(2)');
+const subItem_1 = document.querySelector('header > nav > .main-menu .itag i:nth-child(1)');
+const subItem_2 = document.querySelector('header > nav > .main-menu .itag i:nth-child(2)');
+const subItem_home = document.querySelector('header > nav > .main-menu li:nth-child(1) > a > i');
 const menuBg = document.querySelector('.menu-bg');
 const bgColor = document.querySelector('.bg-color');
 const subMenuLi = document.querySelectorAll('.main-menu > li > ul > li > a');
@@ -49,7 +50,7 @@ bodyObj.addEventListener("mousewheel", function (e) {
 );
 
 
-const buttonEvent = () =>{
+const menuButtonEvent = () =>{
   subItem_1.addEventListener("click", function(e){
     e.preventDefault();
     subItem_1.style.display='none';
@@ -69,6 +70,10 @@ const buttonEvent = () =>{
       subMenu[i].classList.toggle('sub-menu');
     }
     menuBg.classList.toggle('menu-bg');
+  });
+
+  subItem_home.addEventListener("click", function(){
+    location.href="index.html";
   });
   loginBtn.addEventListener("click", function(e){
     e.preventDefault();
@@ -114,7 +119,6 @@ const boxDisplayNone = () =>{
           for(let i =0; i <subMenuLi.length;i++) {
             subMenuLi[i].classList.add("background");
           }
-
           bgColor.classList.add("background");
         } else {
           topBtn.style.display="none";
@@ -139,7 +143,7 @@ const boxDisplayNone = () =>{
 const init = () => {
     window.addEventListener("scroll", scrollEvent);
     scrollEvent();
-    buttonEvent();
+    menuButtonEvent();
     window.addEventListener("beforeunload", scrollPageEvent);
     scrollPageEvent();
     boxDisplayNone();
