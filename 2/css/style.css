@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
  
 /* 스크롤바 꾸미기 */
 body{ 
@@ -7,14 +7,15 @@ body{
 }
 
 ::-webkit-scrollbar{
-width: 10px;
+    width: 12px;
+    display: block;
 }
 
 ::-webkit-scrollbar-track{
-    background: #d9cc8f;
+    background: rgba(217, 204, 143, 0.5); border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb{
-    background: #070323;
+    background: rgba(7, 3, 35, 0.3); border-radius: 10px; 
 }
 ::-webkit-scrollbar-button{
     display: none;
@@ -30,6 +31,7 @@ width: 10px;
 
 
 .bg{width: 100vw; height: 100%;}
+
 .login-bg{ 
     background: url('../imgs/6.jpg') no-repeat center center; background-size: cover; 
 }
@@ -52,10 +54,9 @@ header {position:absolute;  top:0; left:0; width: 100%; height: 110px;  z-index:
 .head-private{
     width: 100%; height: 60px; padding: 0 200px; 
     display: flex; justify-content: space-between; align-items: center;
-   
 }
 .head-private h1{ 
-   font-size: 45px; text-shadow: 1px 1px 1px #070323; z-index: 4;
+   font-size: 32px; text-shadow: 1px 1px 1px #070323; z-index: 4;
 }
 
 .container > header a > span{color: #930c71;}
@@ -67,6 +68,7 @@ header {position:absolute;  top:0; left:0; width: 100%; height: 110px;  z-index:
 header > .head-private > .private-menu{ 
     position: absolute; top: 0; right: 200px;
     width: 17%; height: 100%;
+    font-size: 16px;
     display: flex; justify-content: space-between;
 }
 .private-menu li{
@@ -77,17 +79,56 @@ header > .head-private > .private-menu{
     color: #d9cc8f; text-shadow: 1px 1px 1px #070323;
 }
 header > nav{
-    width: 100%; height: 40px; background: #d9cc8f; 
+    position: relative;
+    width: 100%; height: 40px; 
 }
 
 header > nav > .main-menu {
+    position: absolute; left: 25%; top: 0;
     display: flex; justify-content: space-between; align-items: center;
-    width: 40%; height: 100%; margin: 0 auto;
-   
+    width: 880px; height: 100%;
 }
 header > nav > .main-menu li{
+    position: relative;
+    width: 100%; height: 100%;
+    text-align: center; font-size: 20px; line-height: 40px;
 
 }
+header > nav > .main-menu > li > a{
+    color: #070323; text-shadow: 1px 1px 1px #d9cc8f;
+}
+header > nav > .main-menu > li  i:nth-of-type(1){
+    font-size: 22px; font-weight: bold;
+}
+header > nav > .main-menu > li  i:nth-of-type(2){
+    display: none;
+}
+
+header > nav > .main-menu li:hover .sub-menu{
+    display: block;
+}
+/* =========== sub-menu ========== */
+
+.sub-menu{
+   display: none;
+}
+
+.sub-menu > li {
+ position: absolute; width:100%; height: 40px; 
+}
+.main-menu > li > ul > li > a{ width: 100%; height: 100%; font-size: 16px; }
+.main-menu > li > ul > li > a:hover{color:#930c71;}
+.bg-color{
+    position:absolute; left:176px; top: 40px; 
+    width: calc(176px * 4); height: 120px; font-size: 16px;
+    border-radius: 0 0 5px 5px ;
+}
+
+.menu-bg{
+    display: none;
+}
+
+
 main{
    height: 87vh;
 }
@@ -100,7 +141,7 @@ main article {
 
 
 
-main article .box{
+main article form{
     width: 450px; margin: 0 auto; 
     position: absolute; top: 50%; left: 50%; width: 25%;
     background: rgba(255, 255, 255, 0.3); border-radius: 20px;
@@ -162,3 +203,7 @@ button.top-btn{
     top: 0;
     left: 0;
   }
+
+.background{
+    background: rgb(217, 204, 143); 
+}
