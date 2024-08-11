@@ -62,7 +62,7 @@ header {position:absolute;  top:0; left:0; width: 100%; height: 110px;  z-index:
     display: flex; justify-content: space-between; align-items: center;
 }
 .head-private h1{ 
-   font-size: 32px; text-shadow: 1px 1px 1px #070323; z-index: 4;
+   font-size: 32px; text-shadow: 1px 1px 1px #070323; line-height: 60px;
 }
 
 .container > header a > span{color: #930c71;}
