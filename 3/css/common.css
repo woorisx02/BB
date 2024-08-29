@@ -3,9 +3,7 @@
 
 
 @media screen and (min-width:1300px) {
-    header{ 
-        width: 100%;
-    }
+    header{ width: 100%; }
 
     header > nav > ul a{height: 35px;}
     header > nav > ul#hd-main-menu a:hover{ color: #d9cc8f; border-bottom: 3px solid #d9cc8f;}
@@ -16,11 +14,11 @@
     nav {
         position: relative;
         width: 1300px; margin: 0 auto;
-        font-family: "playfair display"; font-weight: bold;
+        font-family: "playfair display"; font-weight: bold; font-size: 16px;
     }
     nav > a, #hd-main-menu, .hd-customer-menu{position: absolute;}
-    nav > a{top:19px; }
-    nav > a > h1{color: #d9cc8f; font-family: "Zoika font";}
+    nav > a {top:19px; left: 0;}
+    nav > a > h1 {color: #d9cc8f; font-family: "Zoika font";}
     nav > a > h1 > span { color: #fbf4d1;}
 
     #hd-main-menu{
@@ -65,8 +63,9 @@
     footer .ft-sns{ 
         width: 140px;
         display: flex; justify-content: space-between;
-        font-size: 20px;
+        font-size: 25px;
     }
+
 }
 
 
