@@ -91,7 +91,7 @@
 /* ===========  box button =========== */
 .boxes{position: relative;}
 #box-button{
-    position: absolute; left: 50%; bottom: 130px;
+    position: absolute; left: 50%; bottom: 180px;
     width: 1050px; height: 120px; 
     display: flex; justify-content: space-between;
     transform: translateX(-50%);
