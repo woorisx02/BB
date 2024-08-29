@@ -31,7 +31,8 @@
     
     .hd-customer-menu {
         right: 0; top: 24px;
-        width: 100px;
+        width: 100px; 
+        text-transform: uppercase;
         display: flex; justify-content: space-between;
     }
 
