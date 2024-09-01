@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./flexSlider Plugin/css/flexslider.css">
+    <link rel="stylesheet" href="./flexSlider Plugin/css/fs-slide.css">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/common-script.js"></script>
-    <link rel="stylesheet" href="./flexSlider Plugin/css/fs-slide.css">
-    <link rel="stylesheet" href="./flexSlider Plugin/css/flexslider.css">
     <script src="./flexSlider Plugin/js/jquery.flexslider.js"></script>
     <script>
         $(window).load(function() {
@@ -23,23 +23,23 @@
     </script>
 </head>
 <body>
-    <div class="container">
         <header>
-            
             <nav>
-                <a href="index.html"><h1><span>B.B</span>ug</h1></a>
+                <a href="index.html"><h1>B.B<span>ug</span></h1></a>
                 <a href="#" id="trigger">
-                    <i class="bi bi-list"></i>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </a>
 
-                <ul id="hd-main-menu">
-                    <li><a href="#">E-Book Service</a></li>
-                    <li><a href="#">Information</a></li>
-                    <li><a href="support.html">Support</a></li>
-                    <li><a href="#">Culture</a></li>
+                <ul id="main-menu">
+                    <li><a href="#">E-Book Service</a><div class="menu-bar"></div></li>
+                    <li><a href="#">Information</a><div class="menu-bar"></div></li>
+                    <li><a href="support.html">Support</a><div class="menu-bar"></div></li>
+                    <li><a href="#">Culture</a><div class="menu-bar"></div></li>
                 </ul>
 
-                <ul class="hd-customer-menu">
+                <ul class="customer-menu">
                     <li><a href="login.html"><span>login</span><i class="bi bi-person-fill"></i></a></li>
                     <li><a href="#"><span>join</span><i class="bi bi-lock-fill"></i></a></li>
                 </ul>
@@ -91,10 +91,10 @@
             </div>
             <div class="boxes">
                 <div id="box-button">
-                    <a href="#" class="btn btn1">E-Book</a>
-                    <a href="#" class="btn btn2">Information</a>
-                    <a href="support.html" class="btn btn3">Support</a>
-                    <a href="#" class="btn btn4">Culture</a>
+                    <a href="#" class="sp-btn btn1">E-Book</a>
+                    <a href="#" class="sp-btn btn2">Information</a>
+                    <a href="support.html" class="sp-btn btn3">Support</a>
+                    <a href="#" class="sp-btn btn4">Culture</a>
                 </div>
             </div>
             
@@ -114,6 +114,6 @@
                 </ul>
             </div>
         </footer>
-    </div>
+
 </body>
 </html>
