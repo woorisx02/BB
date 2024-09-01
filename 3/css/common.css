@@ -19,6 +19,7 @@ footer{background:#262626;}
 .ft-wrap{width:1300px;margin:0 auto;margin-top:100px;padding:20px 0;color:#fff; display:flex;justify-content:space-between;align-items:center;}
 .ft-sns{width: 100px;font-size:21px; display:flex;justify-content:space-between;}
 .ft-sns > li > a{color: #fff;}
+.ft-sns > li > a:hover {color: #d9cc8f;}
 
 
 
