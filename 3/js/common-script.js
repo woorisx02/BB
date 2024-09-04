@@ -1,10 +1,10 @@
 $(function(){
     $(window).scroll(function(){
-        var h = $(document).scrollTop();
-        if(h){
-            $('header').addClass('hd-background');
+        var scrollHeight = $(document).scrollTop();
+        if(scrollHeight>300){
+            $('header').addClass('active');
         }else{
-            $('header').removeClass('hd-background');
+            $('header').removeClass('active');
         }
         
     });
