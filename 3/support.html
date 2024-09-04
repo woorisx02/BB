@@ -8,40 +8,45 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/support-common.css">
     <link rel="stylesheet" href="css/support.css">
     <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/support.js"></script>
     <script src="js/common-script.js"></script>
 </head>
 <body>
     <header>
         <nav>
-           <a href="index.html"><h1><span>B.B</span>ug</h1></a>
+           <h1><a href="index.html" id="logo"><span>B.B</span>ug</a></h1>
             <a href="#" id="trigger">
                 <span></span>
                 <span></span>
                 <span></span>
             </a>
-
-           <ul id="main-menu">
-                <li><a href="#">E-Book Service</a><div class="menu-bar"></div></li>
+            <div id="main-menu-bg"></div>
+            <ul id="main-menu">
+                <li><a href="ebook.html">E-Book Service</a><div class="menu-bar"></div></li>
                 <li><a href="#">Information</a><div class="menu-bar"></div></li>
                 <li><a href="support.html">Support</a><div class="menu-bar"></div></li>
                 <li><a href="#">Culture</a><div class="menu-bar"></div></li>
-           </ul>
+            </ul>
 
-           <ul class="customer-menu">
-                <li><a href="login.html"><span>login</span><i class="bi bi-person-fill"></i></a></li>
-                <li><a href="#"><span>join</span><i class="bi bi-lock-fill"></i></a></li>
-           </ul>
+            <ul class="top-menu">
+                <li><a href="#"><span>login</span><i class="bi bi-person-fill-lock"></i></a></li>
+                <li><a href="#"><span>join</span><i class="bi bi-person-plus-fill"></i></a></li>
+            </ul>
         </nav>
+        
     </header>
-    <div class="hd-bn-bg">
+	<div class="bn sp-bn-bg">
         <h2>Support</h2>
     </div>
+    
+	
     <div class="sp-row">
         <div class="sp-contents">
             <div class="sp-item-bg1"></div>
-            <div class="sp-txt">
+            <div class="sp-txt sp-txt-know">
                 <h3>Want to know <span>B.Bug</span></h3>
                 <h4>B.Bug 알아가기</h4>
                 <p>B.Bug의 모든 소식과 서비스들을  이제 이곳에서 확인하세요! 다양한 행사 및 혜택 또한 이곳에서만공개됩니다.</p>
@@ -52,14 +57,14 @@
 
     <div class="sp-row">
         <div class="sp-contents">
-            <div class="sp-txt">
-                <h3><span>B.Bug'
-                </span>s with you</h3>
+            <div class="sp-item-bg2"></div>
+            <div class="sp-txt sp-txt-withyou">
+                <h3><span>B.Bug'</span>s with you</h3>
                 <h4>도서를 선택할 때 정보의 중요성</h4>
                 <p>개인의 취향에 맞지 않는 책을 읽게 되면 자칫 독서에 흥미를 잃게 되는 경우도 있음을 명심해야 합니다.</p>
                 <a href="#" class="btn more">질문하세요!</a>
             </div>
-            <div class="sp-item-bg2"></div>
+            
         </div>
     </div>
          
@@ -67,8 +72,8 @@
         <h3>Books are the BestFriend</h3>
     </div>
     
-    <div class="sp-box">
-        <div class="sp-box-txt">
+    <div class="sp-bg sp-box">
+        <div class="sp-txt-newbooks">
             <h3>New <span>Books!</span></h3>
             <ul>
                 <li>신청기간 : 매년 1월 2일부터</li>
@@ -80,17 +85,13 @@
         <div class="sp-item-bg4"></div>
     </div>
 
-    <div class="sp-box2">
+    <div class="sp-bg sp-box2">
         <div class="sp-item-bg5"></div>
-        <div class="sp-box-txt2">
+        <div class="sp-txt-term">
             <ul>
                 <li>소요기간 : 평균 20일</li>
-                <li>&nbsp;</li>
-                <li>처리절차 : </li>
-                <li>신청 ▶ 검토 ▶ 주문 ▶ 등록후 비치처리</li>
-                <li>&nbsp;</li>
-                <li>상황안내 : </li>
-                <li>"신청중", "처리중", "소장중"으로 안내</li>
+                <li>처리절차 : 신청 ▶ 검토 ▶ 주문 ▶ 등록후 비치처리</li>
+                <li>상황안내 : "신청중", "처리중", "소장중"으로 안내</li>
             </ul>
             <a href="#" class="btn more">희망도서신청</a>
         </div>
@@ -112,7 +113,7 @@
                 <li><a href="#"><i class="bi bi-youtube"></i></a></li>
             </ul>
         </div>
-    </footer> 
+    </footer>
 
 </body>
 </html>
