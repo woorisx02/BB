@@ -1,25 +1,66 @@
 @charset "utf-8";
 
-header{position: fixed; width:100%; height: 60px;}
-#trigger, .customer-menu i{display: none;}
-nav{width: 1300px; height:100%; margin:0 auto; display: flex; justify-content: space-between;align-items:center;}
-nav > a > h1 {color:#d9cc8f;}
-nav > a > h1 > span{color: #fbf4d1;}
-#main-menu, .customer-menu{font-family: "Playfair Display";font-weight:bold;}
-#main-menu{width: 500px; display: flex; justify-content: space-between; align-items: center;}
-header a{padding:7px; color: #fff}
-.menu-bar{height: 3px;}
-#main-menu > li > a:hover {color:#d9cc8f;}
-#main-menu > li > a:hover+.menu-bar {background:#d9cc8f;}
-.customer-menu{ width: 100px; display: flex; justify-content: space-between; align-items: center; text-transform: uppercase;font-size: 14px;}
+/* -------------------- header------------------------------ */
+header {position:fixed; left:0; top:0; width:100%; height:60px;}
+header.active{background: #ada271;}
 
-.hd-background{ background: rgba(0, 0, 0, 0.9);}
 
-footer{background:#262626;}
-.ft-wrap{width:1300px;margin:0 auto;margin-top:100px;padding:20px 0;color:#fff; display:flex;justify-content:space-between;align-items:center;}
-.ft-sns{width: 100px;font-size:21px; display:flex;justify-content:space-between;}
-.ft-sns > li > a{color: #fff;}
-.ft-sns > li > a:hover {color: #d9cc8f;}
+@media screen and (min-width:1400px) {
+	/* -------------------- nav------------------------------ */
+	nav {position:relative; width:1300px; margin: 0 auto;}
+	#trigger, .top-menu i {display: none;}
+	h1, #main-menu, .top-menu {position:absolute;}
+	#main-menu, .top-menu{font-family:"Playfair Display", serif;}
+	/* -------------------- Logo ------------------------------ */
+	h1 {left:50px; top:19px; color:#d9cc8f;}
+	h1 a span {color: #fbf4d1;}
+	
+
+	/* -------------------- main-menu ------------------------------ */
+	#main-menu { 
+		left: 350px; top:22px;
+		width: 487px;
+		/* font-size: 16px; font-family: "playfair display"; font-weight: bold; */
+		display: flex; justify-content: space-between;
+	}
+	#main-menu > li > a {height:30px; }
+	#main-menu > li > a:hover { color: #d9cc8f; border-bottom: 3px solid #d9cc8f;}
+
+
+	/* -------------------- top 메뉴 ------------------------------ */
+	.top-menu {
+		right:50px; top:22px;
+		width:100px; 
+		font-size:14px; text-transform: uppercase;
+		display: flex; justify-content: space-between;
+	}
+
+
+	/* -------------------- footer  ------------------------------ */
+	footer {background: #262626;}
+
+	/* -------------------- footer 영역 ------------------------------ */
+	.ft-wrap{
+		width:1300px; margin: 0 auto; padding: 20px 0;
+		display: flex; justify-content: space-between; align-items: center;
+	}
+
+	/* -------------------- footer 텍스트 ------------------------------ */
+	.ft-info p{
+		color: #fff; 
+	}
+
+	/* -------------------- footer sns ------------------------------ */
+	.ft-sns{
+		width:150px; 
+		color:#fff; font-size:26px;
+		display: flex; justify-content: space-between;
+	}
+	/* -------------------- banner------------------------------ */
+	.bn {height: 500px; }
+	h2 {padding-top:230px; font-size: 90px; color: #d9cc8f; text-align: center;}
+	h3 {padding: 100px 0 40px 0; font-size: 48px; text-align: center;}
+}
 
 
 

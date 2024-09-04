@@ -8,8 +8,8 @@
 	.top-menu > li > a > span {display: none;}
 	h1, .top-menu, #trigger, #main-menu {position:absolute;}
 	#trigger {right:30px; top:20px; width: 25px;height:22px; display:flex;flex-direction:column;justify-content:space-between;}
-	#trigger > span {width:100%; height:3px; background: #fff;}
-	#main-menu, .top-menu{font-family:"Playfair Display", serif;}
+	#trigger > span {width:100%; height:3px; background: #fff; transition: all 0.4s ease-in; }
+	#main-menu, .top-menu{font-family:"Playfair Display", serif; }
 	/* -------------------- Logo ------------------------------ */
 	h1 {right:50%; top:26px; font-size:34px; color:#d9cc8f; transform: translateY(-50%);}
 	h1 a span {color: #fbf4d1;}
@@ -23,13 +23,13 @@
 		
 	/* -------------------- main-menu ------------------------------ */
 	
-	#main-menu-bg{width: 0;height:100vh; background:rgba(0, 0, 0, 0.8); transition: all 0.2ms linear;}
+	#main-menu-bg{width: 0;height:100vh; background:rgba(0, 0, 0, 0.8);  transition: all 0.1ms ease-in; }
 	#main-menu-bg.active {width: 100vw;}
-	#main-menu{display: none; transition: all 0.4s ease-in; }
+	#main-menu{display: none;transition: all 0.4s ease-in; }
 	#main-menu.active{left: 50%; top: 100px; display: flex; flex-direction: column;font-size:30px;transform: translateX(-50%); text-align: center; }
 	#main-menu > li{padding: 10px;border-bottom: 1px dashed #d9cc8f;}
 	#main-menu > li > a {display: block; padding: 10px 25px;}
-	#main-menu > li > a:hover {background:#d9cc8f ; color: #070323;}
+	#main-menu > li > a:hover {color: #070323; background:#d9cc8f; font-weight: bold;}
 
 	/* -------------------- top 메뉴 ------------------------------ */
 	.top-menu {
@@ -77,7 +77,7 @@
 	h1, .top-menu, #trigger, #main-menu {position:absolute;}
 	#trigger {right:30px; top:20px; width: 25px;height:22px; display:flex;flex-direction:column;justify-content:space-between; }
 	#trigger > span {width:100%; height:3px; background: #fff; transition:all 0.4s ease-in;}
-	#main-menu, .top-menu{font-family:"Playfair Display", serif; font-weight: bold;}
+	#main-menu, .top-menu{font-family:"Playfair Display", serif;}
 	/* -------------------- Logo ------------------------------ */
 	h1 {right:50%; top:10px; font-size:34px; color:#d9cc8f; transform: translateX(50%);}
 	h1 a span {color: #fbf4d1;}
@@ -89,13 +89,13 @@
 		
 	/* -------------------- main-menu ------------------------------ */
 	
-	#main-menu-bg{width: 0;height:100vh; background:rgba(0, 0, 0, 0.8); transition: all 0.2ms linear;}
+	#main-menu-bg{width: 0;height:100vh; background:rgba(0, 0, 0, 0.8); transition: all 0.2ms ease-in;}
 	#main-menu-bg.active {width: 100%;}
-	#main-menu{display: none; transition: all 0.4s ease-in; }
+	#main-menu{display: none;font-weight: bold; transition: all 0.4s ease-in; }
 	#main-menu.active{left: 50%; top: 100px; display: flex; flex-direction: column;font-size:30px;transform: translateX(-50%); text-align: center; }
 	#main-menu > li{padding: 10px;border-bottom: 1px dashed #d9cc8f;}
 	#main-menu > li > a {display: block; padding: 10px 25px;}
-	#main-menu > li > a:hover {background:#d9cc8f ; color: #070323;}
+	#main-menu > li > a:hover {background:#d9cc8f; color: #070323;}
 	/* -------------------- top 메뉴 ------------------------------ */
 	.top-menu {
 		left:30px; top:18px;
