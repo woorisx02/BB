@@ -1,0 +1,178 @@
+@charset "utf-8";
+  
+/* FHD 버전 */
+@media screen and (min-width:1400px) {
+    
+    .sp-bn-bg {background:url('../imgs/support/hd-bn-bg.jpg') no-repeat center center; background-size: cover;}
+
+    .sp-row {height:500px; margin-top:100px; background:url('../imgs/support/sp-row-bg.jpg') repeat-x;}
+    .sp-contents {display:flex; justify-content:space-between; align-items:center; width: 1300px; margin:0 auto;}
+    .sp-item-bg1 {width:780px; height:500px; background:url('../imgs/support/sp-item-bg1.jpg') no-repeat center center; background-size:cover;}
+    .sp-item-bg2 {width:780px; height:500px; background:url('../imgs/support/sp-item-bg2.jpg') no-repeat center center; background-size:cover;}
+
+    .sp-item-bg3 {height: 500px; margin-top: 100px; 
+        background: url('../imgs/support/sp-item-bg3.jpg') no-repeat center center; background-size: cover;}
+    .sp-item-bg3 > h3 {padding-top: 230px; font-size:60px; color: #fbf4d1; text-align:center;}
+
+
+    .sp-item-bg4 {width: 868px; height: 432px; background: url('../imgs/support/sp-item-bg4.jpg') no-repeat center center; background-size: cover;}
+
+
+    .sp-item-bg5 {width: 551px; height: 432px; background: url('../imgs/support/sp-item-bg5.jpg') no-repeat center center; background-size: cover;}
+    .sp-item-bg6 {width: 314px; height: 432px; background: url('../imgs/support/sp-item-bg6.jpg') no-repeat center center; background-size: cover;}
+
+
+    .sp-txt-know{ width:570px; height: 500px; padding: 100px 0 70px 70px;}
+    .sp-txt-withyou{ width:570px; height: 500px; padding: 100px 70px 70px 0;}
+    h3 {font-size:48px; padding: 0; text-align: left;}
+    h3 > span {color: #930c71;}
+    h4 { padding-top:10px;}
+    .sp-txt p { padding-top:60px;}
+    .sp-txt a { margin-top:30px;}
+
+    .more {margin-top:50px; padding:10px 25px}
+
+    .sp-box{width:1300px;margin:0 auto;padding-top:100px; display:flex; justify-content: space-between;}
+    .sp-box2{width:1300px;margin:0 auto;margin-bottom:100px; display:flex; justify-content: space-between;}
+    .sp-txt-newbooks{ width:432px; height: 432px; background: #ece3f2; padding: 70px; display:flex;flex-direction:column;justify-content:space-between;}
+    .sp-txt-term{ width:434px; height: 432px; background: #ece3f2; padding: 70px; display: flex; flex-direction:column; justify-content: space-between;}
+    .sp-txt-term > a{ width: 150px; text-align: center;}
+
+}
+
+
+
+
+
+/* HD버전 */
+@media screen and (min-width:1000px) and (max-width:1399px) {
+    
+    .sp-bn-bg {background:url('../imgs/support/hd-bn-bg.jpg') no-repeat center center; background-size: cover;}
+
+    body.active{overflow-y: hidden;}
+    .sp-row{margin: 100px auto;}
+    .sp-contents {display:flex; justify-content:center; align-items:center; flex-wrap: wrap; margin:0 auto;text-align: center;}
+    .sp-item-bg1 {width:780px; height:500px; background:url('../imgs/support/sp-item-bg1.jpg') no-repeat center center; background-size:cover;}
+    .sp-item-bg2 {width:780px; height:500px; background:url('../imgs/support/sp-item-bg2.jpg') no-repeat center center; background-size:cover;}
+
+    .sp-item-bg3 {height: 500px; margin-top: 100px; 
+        background: url('../imgs/support/sp-item-bg3.jpg') no-repeat center center; background-size: cover;}
+    .sp-item-bg3 > h3 {padding-top: 230px; font-size:60px; color: #fbf4d1; text-align:center;}
+
+
+    .sp-item-bg4 {width: 780px; height: 432px; background: url('../imgs/support/sp-item-bg4.jpg') no-repeat center center; background-size: cover;}
+
+
+    .sp-item-bg5 {width: 780px; height: 432px; background: url('../imgs/support/sp-item-bg5.jpg') no-repeat center center; background-size: cover;}
+
+
+
+    .sp-txt{ width:780px; height: 500px; padding: 70px; background: #ece3f2;}
+
+    h3 {font-size:48px; padding: 0; }
+    h3 > span {color: #930c71;}
+    h4 { padding-top:10px;}
+    .sp-txt p { padding-top:60px;}
+    .sp-txt a { margin-top:80px;}
+
+    .more {margin-top:50px; padding:10px 25px}
+
+    .sp-box{width:780px;margin:100px auto;display:flex; justify-content: space-between;}
+    .sp-box2 {margin-bottom: 100px;}
+    .sp-bg {font-size: 16px;display:flex; flex-wrap: wrap; justify-content:center; text-align: center;}
+    .sp-txt-newbooks{ width:780px; height: 432px; background: #ece3f2; padding: 70px; display:flex;flex-direction:column;justify-content:space-between;}
+    .sp-txt-term{ width: 780px; height: 432px; background: #ece3f2; padding: 70px; display: flex; flex-direction:column; justify-content: space-between; }
+    .sp-txt-term > a { width: 150px; text-align: center; margin: 0 auto;}
+}
+
+
+
+
+
+
+
+/* 태블릿 버전 */
+@media screen and (min-width:760px) and (max-width:999px) {
+
+    .sp-bn-bg {background:url('../imgs/support/tablet/sp-bn-bg-tablet.jpg') no-repeat center center; background-size: cover;} 
+    
+    body.active{overflow-y: hidden;}
+    .sp-row {height:293px; margin-top:100px; background:url('../imgs/support/tablet/sp-row-bg-tablet.jpg') repeat-x;}
+    .sp-contents {display:flex;justify-content: center; align-items:center; }
+    .sp-item-bg1 {width:360px; height:293px; background:url('../imgs/support/tablet/sp-item-bg1-tablet.jpg') no-repeat center center; background-size:cover;}
+    .sp-item-bg2 {width:360px; height:293px; background:url('../imgs/support/tablet/sp-item-bg2-tablet.jpg') no-repeat center center; background-size:cover;}
+
+    .sp-item-bg3 {height: 400px; margin-top: 100px; 
+        background: url('../imgs/support/tablet/sp-item-bg3-tablet.jpg') no-repeat center center; background-size: cover;}
+    .sp-item-bg3 > h3 {padding-top: 180px; font-size:50px; color: #fbf4d1; text-align:center;}
+
+
+    .sp-item-bg4 {width: 360px; height: 293px; background: url('../imgs/support/sp-item-bg4.jpg') no-repeat center center; background-size: cover;}
+
+
+    .sp-item-bg5 {width: 360px; height: 293px; background: url('../imgs/support/tablet/sp-item-bg5-tablet.jpg') no-repeat center center; background-size: cover;}
+    .sp-item-bg6 {display: none;}
+
+
+    .sp-txt-know{ width:400px; height:293px; padding: 40px 0 40px 40px;}
+    .sp-txt-withyou{ width:400px; height: 293px; padding: 40px 0 40px 40px;}
+    h3 {font-size:30px; padding: 0; text-align: left;}
+    h3 > span {color: #930c71;}
+    h4 { padding-top:10px;}
+    .sp-txt p { padding-top:25px;}
+
+    .more {height:30px; margin-top:30px; padding-top: 5px; font-size: 14px;}
+
+    .sp-bg {font-size: 14px; background: url('../imgs/support/tablet/sp-row-bg-tablet.jpg') repeat-x center; background-size: cover;display:flex; justify-content:center;}
+    .sp-box {margin:100px auto; }
+    .sp-box2 {margin-bottom: 100px;}
+    .sp-txt-newbooks{ width:360px; height: 293px; padding: 50px; display:flex;flex-direction:column;justify-content:space-between;}
+    .sp-txt-term{ width:360px; height: 293px;padding: 50px; display: flex; flex-direction:column; justify-content: space-between;}
+    .sp-txt-term > a{ width: 150px; text-align: center;}
+}
+
+
+
+
+
+
+
+
+
+/* 스마트폰버전 */
+@media screen and (max-width:759px) {
+
+    .sp-bn-bg {background:url('../imgs/support/smartphone/sp-bn-bg-smartphone.jpg') no-repeat center center; background-size: cover;}  
+
+    body.active {overflow-y: hidden;}
+    .sp-row {margin: 0 auto;margin-top: 60px;}
+    .sp-contents {display:flex;flex-direction: column; justify-content: center; align-items:center;}
+
+    .sp-item-bg1 {width:350px; height:293px; background:url('../imgs/support/smartphone/sp-item-bg1-smartphone.jpg') no-repeat center center; background-size:cover;}
+    .sp-txt-know{ width:350px; height:293px;padding:0 20px; text-align: center; background: #e4d7ed;}
+
+
+    .sp-item-bg2 {width:350px; height:293px; margin-bottom: 60px;  background:url('../imgs/support/smartphone/sp-item-bg2-smartphone.jpg') no-repeat center center; background-size:cover;}
+    .sp-txt-withyou{ width:350px; height: 293px;padding: 0 20px;text-align: center; background: #e4d7ed;}
+
+    
+    .sp-item-bg3 {height: 300px; 
+        background: url('../imgs/support/smartphone/sp-item-bg3-smartphone.jpg') no-repeat center center; background-size: cover; margin-bottom: 60px;}
+    .sp-item-bg3 > h3 {padding-top: 135px; font-size:30px; color: #fbf4d1; text-align:center;}
+
+
+    .sp-item-bg4 {width: 350px; height: 293px; background: url('../imgs/support/smartphone/sp-item-bg4-smartphone.jpg') no-repeat center center; background-size: cover;}
+    .sp-item-bg5, .sp-item-bg6{display: none;}
+    
+    h3 {font-size:30px; padding: 30px 0 0 0; text-align: center;}
+    h3 > span {color: #930c71;}
+    h4 { padding-top:10px;}
+    .sp-txt p { padding-top:25px;}
+
+    .more {height:30px; margin-top:30px; padding-top:5px; font-size: 14px;}
+
+    .sp-bg {width:350px; margin:0 auto; font-size: 14px;}
+    .sp-txt-newbooks{ width:350px; height: 293px; padding: 0 30px 50px 30px; background:#e4d7ed; display:flex;flex-wrap: wrap; flex-direction:column;justify-content:space-between;}
+    .sp-txt-term{ width:350px; height: 293px;margin-bottom: 60px; padding: 40px;background: #e4d7ed; display: flex; flex-direction:column; justify-content: space-between; align-items: center;}
+    .sp-txt-term > a{ width: 150px; text-align: center;}
+}

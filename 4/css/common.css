@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* -------------------- header------------------------------ */
+header {position:fixed; left:0; top:0; width:100%; height:60px; z-index:9;}
+header.active {background: #ada271;}
+
+
+@media screen and (min-width:1400px) {
+	/* -------------------- nav------------------------------ */
+	nav {position:relative; width:1300px; margin: 0 auto;}
+	#trigger, .top-menu i {display:none;}
+	h1, #main-menu, .top-menu {position:absolute;}
+	#main-menu, .top-menu {font-family:"Playfair Display", serif;}
+	/* -------------------- Logo ------------------------------ */
+	h1 {left:50px; top:19px; color:#d9cc8f;}
+	h1 a span {color: #fbf4d1;}
+
+	/* -------------------- main-menu ------------------------------ */
+	#main-menu { 
+		left:350px; top:22px;
+		width:487px;
+		/* font-size: 16px; font-family: "playfair display"; font-weight: bold; */
+		display: flex; justify-content: space-between;
+	}
+	#main-menu > li > a {height:30px;}
+	#main-menu > li > a:hover {color: #d9cc8f; border-bottom: 3px solid #d9cc8f;}
+
+	/* -------------------- top 메뉴 ------------------------------ */
+	.top-menu {
+		right:50px; top:22px;
+		width:100px; 
+		font-size:14px; text-transform:uppercase;
+		display: flex; justify-content: space-between;
+	}
+
+	.bn {height:500px;}
+	h2 {font-size: 90px; color: #d9cc8f; text-align: center;transform:translateY(250px);}
+	h3 {font-size: 48px; text-align: center;}
+
+	/* -------------------- footer  ------------------------------ */
+	footer {background: #262626;}
+
+	/* -------------------- footer 영역 ------------------------------ */
+	.ft-wrap{
+		width:1300px; margin: 0 auto; padding: 20px 0;
+		display: flex; justify-content: space-between; align-items: center;
+	}
+
+	/* -------------------- footer 텍스트 ------------------------------ */
+	.ft-info p{
+		color: #fff; 
+	}
+
+	/* -------------------- footer sns ------------------------------ */
+	.ft-sns{
+		width:150px; 
+		color:#fff; font-size:26px;
+		display: flex; justify-content: space-between;
+	}
+	
+	/* -------------------- banner------------------------------ */
+
+}
+
+ @media screen and (min-width:1000px) and (max-width:1399px) {
+	/* -------------------- nav------------------------------ */
+	nav {position:relative; width:920px; margin: 0 auto;}
+	#trigger, .top-menu i {display: none;}
+	h1, #main-menu, .top-menu {position:absolute;}
+	#main-menu, .top-menu{font-family:"Playfair Display", serif;}
+	/* -------------------- Logo ------------------------------ */
+	h1 {left:50px; top:19px; color:#d9cc8f;}
+	h1 a span {color: #fbf4d1;}
+
+	/* -------------------- main-menu ------------------------------ */
+	#main-menu { 
+		left: 350px; top:22px;
+		width: 487px;
+		display: flex; justify-content: space-between;
+	}
+	#main-menu > li > a {height:30px; }
+	#main-menu > li > a:hover { color: #d9cc8f; border-bottom: 3px solid #d9cc8f;}
+
+	/* ------------------- top 메뉴 ------------------------------ */
+	.top-menu {
+		right:50px; top:22px;
+		width:100px; 
+		font-size:14px; text-transform: uppercase;
+		display: flex; justify-content: space-between;
+	}
+	.bn {height:500px; margin-bottom:100px;}
+	h2 {font-size:90px; color:#d9cc8f; text-align: center; transform:translateY(250px);}
+	h3 {font-size:38px; text-align: center;} 
+} 
+
+
+/* --------------------sub-title-------------------- */
+
+h3{font-size:48px; text-align:center; margin-top:100px; line-height:36px; color:#070323;}
+
+.bug-st{font-size:16px; text-align:center; padding-top:30px;}

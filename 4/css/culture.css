@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+/* ------------------ 공통 style ------------------ */
+    /* ------------------ banner ------------------ */
+    .bn-2 h3 {color: #d9cc8f; font-size: 60px; text-align: center; line-height:500px;}
+
+    .bn-1 {
+        background:url(../imgs/culture/cul-sec-bn-1-bg-1.jpg) no-repeat center center;background-size:cover;
+    }
+
+    .bn-2 {
+        background:url(../imgs/culture/cul-sec-bn-2-bg-2.jpg) no-repeat center center;background-size:cover;
+    }
+
+    /* ------------------ section ------------------ */
+    .contents {position:relative;}
+    .contents > h3, .contents > h4, .contents > p, .contents > .btn, .contents > .text-box{position:absolute;}
+
+
+@media screen and (min-width:1400px) {
+
+ /* ------------------ section ------------------ */  
+    /* ------------------ button ------------------ */
+    .btn {
+        width:140px; height:50px; background:rgb(7,3,23);
+    } 
+
+    /* ------------------ article 1,2 공통 영역 설정 ------------------ */
+    .container-1 {
+        position:relative;
+        width:100%; height:500px; margin:100px 0;
+    }
+
+    .sc-box-1-bg, .sc-box-2-bg { 
+        position:absolute; top:50px;
+        width:100%; height:80%; background:rgb(253,237,228); z-index:-1;
+    }
+    .sc-box-1, .sc-box-2 {
+        width:1300px; height:500px; margin: 0 auto;
+    }
+
+    .sc-item-1-txt, .sc-item-2-txt {width:40%; height:80%; margin:50px 0;}
+    .sc-item-1-bg, .sc-item-2-bg  {width:60%; height:100%;}
+
+
+    /* ------------------ article 3,4 공통 영역 설정 ------------------ */
+    .container-2 {width:1300px; margin: 0 auto; background:rgb(253,237,228);}
+    .sc-container-3 {height:380px; margin-top:100px;}
+    .sc-container-4 {height:460px; margin-bottom:100px;}
+
+    .sc-box-3, .sc-box-4 {
+        width:100%; height:100%; margin: 0 auto;
+    } 
+
+    /* ------------------ article 1 ------------------ */
+    .sc-item-1-bg {
+        background:url(../imgs/culture/cul-sc-item-1-bg-1.jpg) no-repeat center center;background-size:cover;}
+    .sc-item-1-txt h3 {left:70px; top:70px; font-size:48px;}
+    .sc-item-1-txt h4 {left:70px; top:134px; font-size:16px;}
+    .sc-item-1-txt p {left:70px; top:199px; width:65%;}
+    .sc-item-1-txt .btn {left:70px; top:274px;}
+
+    /* ------------------ article 2 ------------------ */
+    .sc-item-2-bg {
+        background:url(../imgs/culture/cul-sc-item-2-bg-1.jpg) no-repeat center center;background-size:cover;}
+    .sc-item-2-txt h3 {right:70px; top:70px; font-size:48px;}
+    .sc-item-2-txt h4 {right:70px; top:134px; font-size:16px;}
+    .sc-item-2-txt p {right:70px; top:199px; width:50%; text-align:right;}
+    .sc-item-2-txt .btn {right:70px; top:274px;}
+
+    /* ------------------ article 3 ------------------ */
+    .sc-item-3-bg {
+        width:65.4%; height:100%; 
+        background:url(../imgs/culture/cul-sc-item-1-bg-1.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .sc-item-3-txt {width:34.6%; height:100%; background:rgb(253,237,228);}
+    .sc-item-3-txt h3 {left:70px; top:70px; font-size:48px;}
+    .sc-item-3-txt h4 {left:70px; top:134px; font-size:16px;}
+    .sc-item-3-txt p {left:70px; top:199px; width:60%;}
+    .sc-item-3-txt .btn {left:70px; top:274px;}
+
+    /* ------------------ article 4 ------------------ */
+    .sc-item-4-bg-1 {
+        width:42.2%; height:100%; 
+        background:url(../imgs/culture/cul-sc-item-4-bg-1.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .sc-item-4-bg-2 {width:23.84%; height:100%; 
+        background:url(../imgs/culture/cul-sc-item-4-bg-2.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .sc-item-4-txt {width:33.84%; height:100%; background:rgb(253,237,228);}
+    .sc-item-4-txt h3 {left:70px; top:70px; font-size:48px;}
+    .sc-item-4-txt h4 {left:70px; top:134px; font-size:16px;}
+    .sc-item-4-txt .text-box {left:70px; top:200px; width:65%;}
+    .sc-item-4-txt .btn {left:50%; top:339px; transform:translateX(-50%);}
+}
+
+@media screen and (min-width:1000px) and (max-width:1399px) {
+ /* ------------------ section ------------------ */  
+    /* ------------------ button ------------------ */
+    .btn {
+        width:140px; height:50px; background:rgb(7,3,23);
+    } 
+
+    /* ------------------ article 1,2 공통 영역 설정 ------------------ */
+    .container-1 {
+        position:relative;
+        width:100%; height:500px; margin:100px 0;
+    }
+
+    .sc-box-1-bg, .sc-box-2-bg { 
+        position:absolute; top:50px;
+        width:100%; height:80%; background:rgb(253,237,228); z-index:-1;
+    }
+    .sc-box-1, .sc-box-2 {
+        width:920px; height:500px; margin: 0 auto;
+    }
+
+    .sc-item-1-txt, .sc-item-2-txt {width:50%; height:80%; margin:50px 0;}
+    .sc-item-1-bg, .sc-item-2-bg  {width:50%; height:100%;}
+
+
+    /* ------------------ article 3,4 공통 영역 설정 ------------------ */
+    .container-2 {width:920px; margin: 0 auto; background:rgb(253,237,228);}
+    .sc-container-3 {height:380px; margin-top:100px;}
+    .sc-container-4 {height:460px; margin-bottom:100px;}
+
+    .sc-box-3, .sc-box-4 {
+        width:100%; height:100%; margin: 0 auto;
+    } 
+
+    /* ------------------ article 1 ------------------ */
+    .sc-item-1-bg {
+        background:url(../imgs/culture/cul-sc-item-1-bg-1.jpg) no-repeat center center;background-size:cover;}
+    .sc-item-1-txt h3 {left:40px; top:70px; font-size:38px;}
+    .sc-item-1-txt h4 {left:40px; top:134px; font-size:16px;}
+    .sc-item-1-txt p {left:40px; top:199px; width:66%;}
+    .sc-item-1-txt .btn {left:40px; top:274px;}
+
+    /* ------------------ article 2 ------------------ */
+    .sc-item-2-bg {
+        background:url(../imgs/culture/cul-sc-item-2-bg-1.jpg) no-repeat center center;background-size:cover;}
+    .sc-item-2-txt h3 {right:40px; top:70px; font-size:38px;}
+    .sc-item-2-txt h4 {right:40px; top:134px; font-size:16px;}
+    .sc-item-2-txt p {right:40px; top:199px; width:56%; text-align:right;}
+    .sc-item-2-txt .btn {right:40px; top:274px;}
+
+    /* ------------------ article 3 ------------------ */
+    .sc-item-3-bg {
+        width:65.4%; height:100%; 
+        background:url(../imgs/culture/cul-sc-item-1-bg-1.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .sc-item-3-txt {width:34.6%; height:100%; background:rgb(253,237,228);}
+    .sc-item-3-txt h3 {left:40px; top:70px; font-size:38px;}
+    .sc-item-3-txt h4 {left:40px; top:134px; font-size:16px;}
+    .sc-item-3-txt p {left:40px; top:199px; width:66%;}
+    .sc-item-3-txt .btn {left:40px; top:274px;}
+
+    /* ------------------ article 4 ------------------ */
+    .sc-item-4-bg-1 {
+        width:42.2%; height:100%; 
+        background:url(../imgs/culture/cul-sc-item-4-bg-1.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .sc-item-4-bg-2 {
+        width:23.84%; height:100%; 
+        background:url(../imgs/culture/cul-sc-item-4-bg-2.jpg) no-repeat center center;
+        background-size:cover;
+    }
+    .sc-item-4-txt {width:33.84%; height:100%; background:rgb(253,237,228);}
+    .sc-item-4-txt h3 {left:40px; top:70px; font-size:38px;}
+    .sc-item-4-txt h4 {left:40px; top:134px; font-size:16px;}
+    .sc-item-4-txt .text-box {left:40px; top:200px; width:80%;}
+    .sc-item-4-txt .btn {left:50%; top:339px; transform:translateX(-50%);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
