@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+
+/*========== header =========*/
+header {
+	position:fixed; left:0; top:0; width:100%; height:60px; z-index:9;
+	transition:all 0.2s ease-in;
+}
+header.active {background:#ada271;}
+
+h1 {top:15px; font-size:30px;}
+/*
+h5 > span:nth-child(1) {color:rgb(251,244,209);}
+h5 > span:nth-child(2) {color:rgb(217,204,143);}
+
+h5 {font-family:"Playfair Display", serif;}
+*/
+
+/*========== footer ==========*/
+footer {background: #222;}
+
+
+/*========== banner ==========*/
+.bn::after {width:100%; height:100%;}
+.bn::after.on {background:rgba(0,0,0,0.7); z-index:5}
+
+.bn h2, .bn h3 {color:#d9cc8f; text-align:center; padding-top:250px;}
+
+@media screen and (min-width:1400px) {
+	.bn {height:510px; margin-bottom:100px;}
+	#trigger i, .top-menu i {display:none;}
+	
+	nav {position:relative; width:1300px; height:100%; margin: 0 auto; font-family:"Playfair Display", serif;}
+	h1, #main-menu, .top-menu {position:absolute;}
+	
+	/*========== Logo ==========*/
+	h1 {left:50px;}
+	h1 a {color:#d9cc8f;}
+	h1 a span {color: #fbf4d1;}
+	
+	/*========== menu ==========*/
+	#main-menu {display:flex; left:50%; top:0; transform:translateX(-50%); font-size:18px;}
+	#main-menu li a {padding:18px 25px;}
+	.menu-bar {width:0; height:3px; transition:all 0.4s ease-in;}
+	
+	/*========== top-menu ==========*/
+	.top-menu {display:flex; right:50px; top:0; font-size:14px; text-transform:uppercase;}
+	.top-menu li a {padding:22px 20px;}
+	
+	/*========== menu:hover ==========*/
+	#main-menu li a:hover {color:#d9cc8f;}
+	#main-menu li a:hover + .menu-bar {width:100%; background:#d9cc8f;}
+	.top-menu li a:hover {color:#d9cc8f;}
+
+
+	/*========== footer ==========*/
+	.ft-wrap {
+		display:flex; justify-content:space-between; align-items:center;
+		width:1300px; height:100px; margin:0 auto; color:#f6f6f6;
+	}
+	.ft-sns {display:flex; font-size:26px;}
+	.ft-sns a {padding:0 15px;}
+	
+	
+	
+	/*========== banner==========*/
+	.bn {height:500px;}
+	h2 {font-size:72px; color:#d9cc8f; text-align: center;}
+	
+	/*========== section ==========*/
+	section {width:1300px; margin:120px auto;}
+	h3 {font-size:42px;}
+}
+
+@media screen and (min-width:1050px) and (max-width:1399px) {
+	.bn {height:510px; margin-bottom:80px;}
+	#trigger i, .top-menu i {display:none;}
+	
+	nav {position:relative; width:1000px; height:100%; margin: 0 auto; font-family:"Playfair Display", serif;}
+	h1, #main-menu, .top-menu {position:absolute;}
+	
+	/*========== Logo ==========*/
+	h1 {left:50px;}
+	h1 a {color:#d9cc8f;}
+	h1 a span {color: #fbf4d1;}
+	
+	/*========== menu ==========*/
+	#main-menu {display:flex; left:50%; top:0; transform:translateX(-50%); font-size:18px;}
+	#main-menu li a {padding:18px 20px;}
+	.menu-bar {width:0; height:3px; transition:all 0.4s ease-in;}
+	
+	/*========== top-menu ==========*/
+	.top-menu {display:flex; right:50px; top:0; font-size:14px; text-transform:uppercase;}
+	.top-menu li a {padding:22px 20px;}
+	
+	/*========== menu:hover ==========*/
+	#main-menu li a:hover {color:#d9cc8f;}
+	#main-menu li a:hover + .menu-bar {width:100%; background:#d9cc8f;}
+	.top-menu li a:hover {color:#d9cc8f;}
+
+
+	/*========== footer ==========*/
+	.ft-wrap {
+		display:flex; justify-content:space-between; align-items:center;
+		width:1000px; height:100px; margin:0 auto; color:#f6f6f6;
+	}
+	.ft-sns {display:flex; font-size:26px;}
+	.ft-sns a {padding:0 15px;}
+	
+	
+	
+	/*========== banner ==========*/
+	.bn {height:450px;}
+	h2 {font-size:64px; color:#d9cc8f; text-align: center;}	
+	
+	/*========== section ==========*/
+	section {width:1000px; margin:120px auto;}
+	h3 {font-size:36px;}
+}
+
+@media screen and (min-width:760px) and (max-width:1049px) {
+	/*========== nav ==========*/
+	.bn {height:510px; margin-bottom:60px;}
+	nav {position:relative; width:100%; height:100%; transition:all 0.3s ease-in;}
+	h1, #trigger, .top-menu, #main-menu {position:absolute;}
+	#main-menu, .top-menu {font-family:"Playfair Display", serif;}
+	
+	/*========== Logo ==========*/
+	h1 {left:50%; transform:translateX(-50%);}
+	h1 a {color:#d9cc8f;}
+	h1 a span {color: #fbf4d1;}
+	
+	/*========== menu ==========*/
+	#main-menu {
+		right:-550px; top:60px; width:50%; height:100vh;
+		background:rgba(38,38,38,0.95); opacity:0; z-index:9;
+		transition:all 0.3s ease-in 0.2s;
+	}
+	#main-menu li {padding:0 30px;}
+	#main-menu li a {padding:30px 0; font-size:22px;}
+	#main-menu li:first-child a {padding-top:100px;}
+	.menu-bar {width:0; height:3px; transition:all 0.4s ease-in;}
+	
+	/*========== top-menu ==========*/
+	.top-menu {display:flex; left:30px; top:10px; font-size:28px;}
+	.top-menu span {display:none;}
+	.top-menu li a {padding:0 5px;}
+	
+	/*========== menu:hover ==========*/
+	#main-menu li a:hover {color:#d9cc8f;}
+	#main-menu li a:hover + .menu-bar {width:100%; background:#d9cc8f;}
+	.top-menu li a:hover {color:#d9cc8f;}
+
+	nav.on {background:rgba(38,38,38,0.95);}
+	#main-menu.on {right:0; opacity:1;}
+
+	/* ========== trigger ==========*/
+	#trigger {right:30px; top:15px;}
+	#trigger i {font-size:26px; }
+	#trigger i:nth-child(1).active {display: none; }
+	#trigger i:nth-child(2) {display: none; }
+	#trigger i:nth-child(2).show {display: block; }
+	
+	
+	
+	/*========== footer ==========*/
+	.ft-wrap {width:500px; margin:0 auto; padding:30px;}
+	.ft-info {text-align:center; color:#f6f6f6;}
+	.ft-sns {display:flex; justify-content:center; margin-top:30px; font-size:32px;}
+	.ft-sns li {padding:0 10px;}
+
+
+	/*========== banner ==========*/
+	.bn {height:510px; margin-bottom:60px;}
+	.bn h2 {font-size:64px; color:#d9cc8f; text-align: center;}
+	
+	/*========== section ==========*/
+	section {width:720px; margin:80px auto;}
+	h3 {font-size:36px;}
+	.bn-shadow.on {opacity:1;}
+}
+
+@media screen and (max-width:759px) {
+	/*========== nav ==========*/
+	.bn {height:510px; margin-bottom:60px;}
+	nav {position:relative; width:100%; height:100%; transition:all 0.3s ease-in;}
+	h1, #trigger, .top-menu, #main-menu {position:absolute;}
+	#main-menu, .top-menu {font-family:"Playfair Display", serif;}
+	
+	/*========== Logo ==========*/
+	h1 {left:50%; transform:translateX(-50%);}
+	h1 a {color:#d9cc8f;}
+	h1 a span {color: #fbf4d1;}
+	
+	/*========== menu ==========*/
+	#main-menu {
+		left:-600px; top:60px; width:50%; height:100vh;
+		background:rgba(38,38,38,0.95); opacity:0; z-index:9;
+		transition:all 0.3s ease-in 0.2s;
+	}
+	#main-menu li {padding:0 30px;}
+	#main-menu li a {padding:20px 0; font-size:17px;}
+	#main-menu li:first-child a {padding-top:100px;}
+	.menu-bar {width:0; height:3px; transition:all 0.4s ease-in;}
+	
+	/*========== top-menu ==========*/
+	.top-menu {display:flex; right:20px; top:10px; font-size:28px;}
+	.top-menu span {display:none;}
+	.top-menu li a {padding:0 5px;}
+	
+	/*========== menu:hover ==========*/
+	#main-menu li a:hover {color:#d9cc8f;}
+	#main-menu li a:hover + .menu-bar {width:100%; background:#d9cc8f;}
+	.top-menu li a:hover {color:#d9cc8f;}
+
+	nav.on {background:rgba(38,38,38,0.95);}
+	#main-menu.on {left:0; opacity:1;}
+
+	/* ========== trigger ==========*/
+	#trigger {left:20px; top:15px;}
+	#trigger i {font-size:26px; }
+	#trigger i:nth-child(1).active {display: none; }
+	#trigger i:nth-child(2) {display: none; }
+	#trigger i:nth-child(2).show {display: block; }
+	
+
+
+	/*========== footer ==========*/
+	.ft-wrap {width:300px; margin:0 auto; padding:30px;}
+	.ft-info {text-align:center; color:#f6f6f6;}
+	.ft-sns {display:flex; justify-content:center; margin-top:30px; font-size:32px;}
+	.ft-sns li {padding:0 10px;}
+
+
+
+	/*========== banner ==========*/
+	.bn {height:510px; margin-bottom:60px;}
+	.bn h2 {font-size:58px;}
+	
+	/*========== section==========*/
+	h3 {font-size:32px;}
+	section {width:350px; margin:65px auto;}
+}

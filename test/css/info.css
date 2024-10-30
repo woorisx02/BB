@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+
+/* ==========본문========== */
+.bn-info-bg{background:url('../imgs/info/info-bn.jpg')no-repeat center center;}
+
+
+section{width:1300px; margin:0 auto;}
+
+h3 {margin-top: 100px;}
+
+h3 span{color:#930c71;}
+
+p {text-align: center; margin: 30px 0 50px;}
+
+input:focus {outline: none;}
+
+.info-search-wrap {
+    position: relative; width: 350px; height: 50px;
+    border-radius: 25px; padding: 10px;
+    left: 50%; transform: translateX(-50%);
+    background:#f4f0dd; 
+}
+
+#info-search {
+    width: 290px; height: 30px; line-height: 50px; justify-content: center;
+    border: none; cursor:pointer; margin-left: 5px; background:#f4f0dd;
+}
+
+.bi-search {
+    font-size: 25px; line-height: 90%; font-weight: 700; cursor:pointer;
+    line-height: 20px;
+    transition: all 0.3s ease-in;
+}
+.bi-search:hover{font-size: 30px;}
+
+/* .info-search-wrap {position:relative; left:50%; width:350px; height:50px; margin-top:50px; transform:translateX(-50%);}
+.info-search {
+    position:absolute; width:100%; height:50px; padding-left:25px;
+    border-radius:50px; outline:0; background:#f4f0dd; border:1px;
+}
+.bi-search {position:absolute; right:20px; top:3px; font-size:30px; font-weight:700; cursor:pointer; transition:all 0.3s ease-in;}
+.info-search-wrap:hover .bi-search {transform: scale(1.2);} */
+
+/* ==========본문내용========== */
+
+.info-container {flex-wrap:wrap; margin-top:50px;}
+.info-container li {width:310px; height:550px; margin-top:30px; background:url('../imgs/info/info-sc-bg.jpg')}
+
+.info-book-title{position:relative; display:flex;}
+
+.info-book{width:280px; height:370px; margin:15px auto; border-radius:10px;}
+.info-book-bg-1{background:url('../imgs/info/info-book-bg-1.jpg')no-repeat center center;}
+.info-book-bg-2{background:url('../imgs/info/info-book-bg-2.jpg')no-repeat center center;}
+.info-book-bg-3{background:url('../imgs/info/info-book-bg-3.jpg')no-repeat center center;}
+.info-book-bg-4{background:url('../imgs/info/info-book-bg-4.jpg')no-repeat center center;}
+.info-book-bg-5{background:url('../imgs/info/info-book-bg-5.jpg')no-repeat center center;}
+.info-book-bg-6{background:url('../imgs/info/info-book-bg-6.jpg')no-repeat center center;}
+.info-book-bg-7{background:url('../imgs/info/info-book-bg-7.jpg')no-repeat center center;}
+.info-book-bg-8{background:url('../imgs/info/info-book-bg-8.jpg')no-repeat center center;}
+
+
+.info-book-title a {
+    position:absolute; left:260px; top:15px;
+	font-size:20px; color:transparent;
+    background: linear-gradient(50deg, rgba(54,19,106,1) 0%, rgba(190,102,80,1) 50%, rgba(254,154,89,1) 100%);
+    background-clip:text;
+}
+
+h4{padding:15px 0 0 30px; font-size:24px; color:#070322; font-family: "Playfair Display";}
+
+
+
+.info-container li p{padding:30px 30px 0 30px; font-size:14px; color:#8f8e93;}
+
+
+
+/* ==========무한궤도========== */
+
+
+.slider {position:relative; width:1920px;height:550px; margin:50px auto; overflow:hidden;}
+.slides img{width:150px; height:200px; margin:0 5px 0 5px; border-radius:5px; box-shadow:0 0 5px;}
+
+.slide-track {display:flex; position:absolute; left:0; top:5px; width:calc(100px*21);animation:loopImage 40s linear infinite;}
+
+.slide-track-2 {display:flex; position:absolute; right:0; top:170px; width:calc(-100);animation:loopImage2 40s linear infinite;}
+
+.slide-track-3 {display:flex; position:absolute; left:0; top:335px; width:calc(100px*21);animation:loopImage3 40s linear infinite;}
+
+
+@keyframes loopImage {
+    0%{transform:translateX(0)}
+    100%{transform:translateX(calc(-100px*7))}
+}
+
+@keyframes loopImage2 {
+    0%{transform:translateX(0)}
+    100%{transform:translateX(calc(100px*7))}
+}
+
+@keyframes loopImage3 {
+    0%{transform:translateX(0)}
+    100%{transform:translateX(calc(-100px*7))}
+}
+
+
+
+
+

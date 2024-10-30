@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family:"Zoika font";
+    src:url('../fonts/Zoika.eot');
+	src:url("../fonts/Zoika.woff") format("woff");
+}
+
+@font-face {
+    font-family:"SUIT-Bold";
+    src: url('../fonts/SUIT-Bold.eot');
+	src: url('../fonts/SUIT-Bold.woff') format("woff");
+}
+
+@font-face {
+    font-family:"SUIT-Regular";
+    src: url('../fonts/SUIT-Regular.eot');
+    src: url('../fonts/SUIT-Regular.woff') format("woff");
+}
+
+
+* {margin:0; padding:0; box-sizing:border-box;}
+
+
+body {
+    font-family:"SUIT-Regular", sans-serif; font-size:16px; color:#333;
+    background:#fff; overflow-x:hidden;
+}
+h1 {font-family:"Zoika font", serif;}
+h2, h3, h5, h6 {font-family:"Playfair Display", serif;}
+h3 span {color: #930c71;}
+h4 {font-family:"SUIT-Bold", sans-serif;}
+ul li, ol li {list-style:none;}
+a {display:inline-block; text-decoration:none; color: #f6f6f6;}
+
+.flex {display:flex;}
+.flex-center {display:flex; justify-content:center; align-items:center;}
+.flex-between {display:flex; justify-content:space-between; align-items:center;}
+
+.btn {padding:12px 25px; background:#070323; border-radius:25px; text-align:center;}
